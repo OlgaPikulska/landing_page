@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Świeckie Pożegnanie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Licorice&family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul class="navigation">
+          <li>
+            <a href="#about" class="nav-a">O mnie</a>
+          </li>
+          <li><a href="" class="nav-a">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container hero">
+        <div class="hero-image">
+          <picture>
+            <!-- Mobilny obrazek
+            <source srcset="img/photo-mobile.webp" media="(max-width: 768px)" type="image/webp" /> -->
+            <source
+              srcset="./assets/images/Krzysztof_trees.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/images/Krzysztof_trees.JPG"
+              type="image/jpeg"
+            />
+            <img
+              src="./assets/images/Krzysztof_trees.JPG"
+              alt="Krzysztof
+                  Pikulski na tle aleji drzew"
+            />
+          </picture>
+        </div>
+        <div class="hero-text">
+          <h1>
+            <span>Godnie</span><br />
+            <span>pożegnać</span><br />
+            <span>bliskich</span>
+          </h1>
+        </div>
+      </section>
+      <section id="about"></section>
+    </main>
+    <footer>
+      <section id="contact"></section>
+    </footer>
+  </body>
+</html>

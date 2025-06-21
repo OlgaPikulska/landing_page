@@ -1,0 +1,139 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-transform: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url(../assets/images/marble.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  min-height: 100vh;
+}
+
+h1,
+.decorative {
+  font-family: "Licorice", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-a {
+  font-size: 1.5rem;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 600px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hero-image {
+  flex: 0 0 40%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image picture,
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  flex: 0 0 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  line-height: 0.8;
+}
+
+.hero-text span {
+  display: block;
+}
+
+/* 📱 Dla małych ekranów */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-image,
+  .hero-text {
+    flex: 1 1 100%;
+    max-height: none;
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
