@@ -20,7 +20,7 @@
           <li>
             <a href="#about" class="nav-a">O mnie</a>
           </li>
-          <li><a href="" class="nav-a">Kontakt</a></li>
+          <li><a href="#contact" class="nav-a">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -53,10 +53,68 @@
           </h1>
         </div>
       </section>
-      <section id="about"></section>
+      <section id="description" class="description container">
+        <div class="container content">
+          <p>Czym jest śmierć?</p>
+          <p>Końcem?</p>
+          <p>Początkiem?</p>
+          <p>Przejściem?</p>
+          <p>Dla nas wszystkich śmierć jest zdarzeniem dramatycznym.</p>
+          <p>Każda osoba jest wyjątkowa i zasługuje na wyjątkowy pogrzeb.</p>
+          <p>
+            Każde życie i każda śmierć tworzy historię, którą warto opowiedzieć.
+          </p>
+          <p>Wierzę w szczerość i prawdziwe uczucie.</p>
+          <p></p>
+        </div>
+      </section>
+      <section id="movie" class="container">
+        <h1>Świeckie pożegnanie</h1>
+        <div class="video-wrapper">
+          <video controls poster="./assets/images/Krzysztof_movie.webp">
+            <source src="./assets/video/IMG_3853.mp4" type="video/mp4" />
+            Twoja przeglądarka nie obsługuje wideo.
+          </video>
+        </div>
+      </section>
+      <section id="about" class="container about-section">
+        <div class="about-text">
+          <p>Nazywam się</p>
+          <h2>Krzysztof Pikulski</h2>
+          <p>
+            prowadzę świeckie pożegnania<br />
+            i w tym tak szczególnym momencie<br />
+            chcę być z Wami i dla Was.
+          </p>
+        </div>
+        <div class="about-image">
+            <picture>
+              <!-- Opcjonalnie mobilna wersja -->
+              <!-- <source srcset="./assets/images/Krzysztof_mobile.webp" media="(max-width: 768px)" type="image/webp" /> -->
+              <source srcset="./assets/images/Krzysztof_roses.webp" type="image/webp" />
+              <source srcset="./assets/images/Krzysztof_roses.JPG" type="image/jpeg" />
+              <img
+                src="./assets/images/Krzysztof_roses.JPG"
+                alt="Krzysztof Pikulski na krzaku białej róży"
+              />
+            </picture>
+      </section>
     </main>
     <footer>
-      <section id="contact"></section>
+      <section id="contact" class="container contact">
+        <h2>Kontakt</h2>
+        <div class="contact-item">
+          <svg class="icon">
+            <use href="./assets/icons/phone.svg" />
+          </svg>
+          <a href="tel:+48792058710">+48 792 058 710</a>
+        </div>
+
+        <div class="contact-item">
+          <svg class="icon"><use href="./assets/icons/mail.svg" /></svg>
+          <a href="mailto:k.pikulski@interia.pl">k.pikulski@interia.pl</a>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
