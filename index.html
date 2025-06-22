@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <ul class="navigation">
-          <li>
-            <a href="#about" class="nav-a">O mnie</a>
-          </li>
-          <li><a href="#contact" class="nav-a">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header class="header-image-section">  
+
+        <picture>
+            <source media="(max-width: 767px)" srcset="./assets/images/roses_mobile.webp" />
+            <source media="(min-width: 768px)" srcset="./assets/images/roses.webp" />
+            <img src="./assets/images/roses.webp" alt="Białe róże" class="header-img" />
+        </picture>
+       
+        <section class="header-content">
+        <h1 class="header-title">Świeckie pożegnanie</h1>
+        <a href="#contact" class="cta-button">Skontaktuj się</a>
+      </section></header>
+  
     <main>
       <section class="container hero">
         <div class="hero-image">
@@ -53,7 +56,7 @@
           </h1>
         </div>
       </section>
-      <section id="description" class="description container">
+      <!-- <section id="description" class="description container">
         <div class="container content">
           <p>Czym jest śmierć?</p>
           <p>Końcem?</p>
@@ -67,9 +70,9 @@
           <p>Wierzę w szczerość i prawdziwe uczucie.</p>
           <p></p>
         </div>
-      </section>
+      </section> -->
       <section id="movie" class="container">
-        <h1>Świeckie pożegnanie</h1>
+       
         <div class="video-wrapper">
           <video controls poster="./assets/images/Krzysztof_movie.webp">
             <source src="./assets/video/IMG_3853.mp4" type="video/mp4" />
@@ -107,12 +110,12 @@
           <svg class="icon">
             <use href="./assets/icons/phone.svg" />
           </svg>
-          <a href="tel:+48792058710">+48 792 058 710</a>
+          <a href="tel:+48792058710" class="contact-a">+48 792 058 710</a>
         </div>
 
         <div class="contact-item">
           <svg class="icon"><use href="./assets/icons/mail.svg" /></svg>
-          <a href="mailto:k.pikulski@interia.pl">k.pikulski@interia.pl</a>
+          <a href="mailto:k.pikulski@interia.pl" class="contact-a">k.pikulski@interia.pl</a>
         </div>
       </section>
     </footer>
