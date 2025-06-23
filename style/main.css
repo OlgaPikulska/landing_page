@@ -184,20 +184,20 @@ h1,
 
 /* description */
 .description {
-  background-image: url(../assets/images/roses.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh; /* wysokość sekcji, np. 80% wysokości ekranu */
   padding: 2rem;
 }
 
 .description .content {
   width: 50%;
   padding: 2rem;
+}
+
+.content p {
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
 /* Responsywność */
@@ -219,6 +219,7 @@ h1,
   height: 0;
   overflow: hidden;
   border-radius: 8px;
+  margin-bottom: 3rem;
 }
 
 .video-wrapper video {
@@ -256,8 +257,6 @@ h1,
   font-size: 4rem;
   margin: 1.5rem 0;
   font-weight: 700;
-  font-family: "Licorice", cursive;
-  text-align: center;
 }
 
 /* Obrazek po prawej */
