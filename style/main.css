@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-image: url(../assets/images/marble.webp);
   background-size: cover;
   background-position: center;
@@ -27,11 +27,11 @@ body {
 
 h1,
 .decorative {
-  font-family: "Licorice", cursive;
+  font-family: 'Licorice', cursive;
   font-weight: 400;
   font-style: normal;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 7rem;
+  font-size: 4rem;
   text-align: center;
   margin: 0;
 }
@@ -53,11 +53,11 @@ h1,
   }
 }
 
-/*header*/
+/*HEADER*/
 
 .header-bg {
   height: 70vh;
-  background-image: url("../assets/images/roses_HD.webp");
+  background-image: url('../assets/images/roses_HD.webp');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -101,73 +101,79 @@ h1,
   }
 }
 
-/* hero */
+/* ABOUT */
 
-.hero {
+.about-section {
   display: flex;
   flex-wrap: wrap;
-  height: auto;
-  min-height: 600px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 60px;
-}
-
-.hero-image {
-  flex: 0 0 40%;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.hero-image picture,
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.hero-text {
-  flex: 0 0 60%;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 600px;
   text-align: center;
-  padding: 2rem;
 }
 
-.hero-text h1 {
-  font-size: 5rem;
-  line-height: 0.8;
+.about-text p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.hero-text span {
-  display: block;
+.about-text h2 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  font-weight: 700;
 }
 
-/* 📱 Dla małych ekranów */
+.about-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.about-image picture,
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.about-image img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 @media (max-width: 768px) {
-  .hero {
+  .about-section {
     flex-direction: column;
-    min-height: auto;
+    align-content: center;
+  }
+  .about-text,
+  .about-image {
+    max-width: 250px;
+    text-align: center;
+    flex: 0 0 auto;
   }
 
-  .hero-image,
-  .hero-text {
-    flex: 1 1 100%;
-    max-height: none;
+  .about-image img {
+    width: 100%;
   }
 
-  .hero-image img {
-    height: auto;
+  .about-text h2 {
+    font-size: 1.75rem;
   }
 
-  .hero-text h1 {
-    font-size: 2rem;
+  .about-text p {
+    font-size: 1rem;
   }
 }
 
-/* description */
+/* DESCRIPTION */
+
 .description {
   display: flex;
   align-items: center;
@@ -176,28 +182,23 @@ h1,
 }
 
 .description .content {
-  width: 50%;
   padding: 2rem;
 }
 
 .content p {
   padding-bottom: 1rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 
-/* Responsywność */
 @media (max-width: 768px) {
-  .photo-section {
-    justify-content: center;
-  }
-
-  .photo-section .content {
-    width: 90%;
+  .content p {
+    font-size: 1rem;
   }
 }
-/* sprawdzić od responsywnosci */
 
-/* movie */
+/* MOVIE */
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -216,74 +217,11 @@ h1,
   display: block;
 }
 
-/* about */
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  padding-top: 4rem;
-}
-
-/* Tekst po lewej */
-.about-text {
-  flex: 1 1 300px;
-  max-width: 600px;
-  text-align: center;
-}
-
-.about-text p {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.about-text h2 {
-  font-size: 4rem;
-  margin: 1.5rem 0;
-  font-weight: 700;
-}
-
-/* Obrazek po prawej */
-.about-image {
-  flex: 1 1 300px;
-  max-width: 400px;
-  margin-left: auto;
-}
-
-.about-image picture,
-.about-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.about-image img {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-/* Responsywność – dodatkowo */
-@media (max-width: 768px) {
-  .about-text,
-  .about-image {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .about-text h2 {
-    font-size: 1.75rem;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-  }
-}
-
-/* footer */
+/* FOOTER */
 
 .contact {
   text-align: center;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .contact h2 {

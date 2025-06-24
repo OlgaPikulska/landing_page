@@ -14,15 +14,17 @@
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-      <header class="header-bg">
-        <div class="container">
+    <header class="header-bg">
+      <div class="container">
         <div class="header-content">
           <h1>Świeckie pożegnanie</h1>
           <a href="#kontakt" class="header-cta-button">Skontaktuj się</a>
         </div>
       </div>
-      </header>
+    </header>
     <main>
+      <!-- ABOUT -->
+
       <section id="about" class="container about-section">
         <div class="about-text">
           <p>Nazywam się</p>
@@ -34,31 +36,42 @@
           </p>
         </div>
         <div class="about-image">
-            <picture>
-              <!-- Opcjonalnie mobilna wersja -->
-              <!-- <source srcset="./assets/images/Krzysztof_mobile.webp" media="(max-width: 768px)" type="image/webp" /> -->
-              <source srcset="./assets/images/Krzysztof_roses.webp" type="image/webp" />
-              <source srcset="./assets/images/Krzysztof_roses.JPG" type="image/jpeg" />
-              <img
-                src="./assets/images/Krzysztof_roses.JPG"
-                alt="Krzysztof Pikulski na krzaku białej róży"
-              />
-            </picture>
-      </section>
-            <section id="description" class="description container">
-        <div class="container content">
-          <p>Czym jest śmierć?</p>
-          <p>Końcem?<br>Początkiem?<br>Przejściem?</p>
-          <p>Dla nas wszystkich śmierć jest <br>zdarzeniem dramatycznym.</p>
-          <p>Każda osoba jest wyjątkowa i zasługuje na wyjątkowy pogrzeb. Każde życie i każda śmierć tworzy historię, którą warto opowiedzieć.
-          </p>
-          <p>Wierzę w szczerość<br>i prawdziwe uczucie.</p>
-          <p></p>
+          <picture>
+            <source
+              srcset="./assets/images/Krzysztof_roses.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/images/Krzysztof_roses.JPG"
+              type="image/jpeg"
+            />
+            <img
+              src="./assets/images/Krzysztof_roses.JPG"
+              alt="Krzysztof Pikulski na krzaku białej róży"
+            />
+          </picture>
         </div>
       </section>
-      
+
+      <!-- DESCRIPTION -->
+
+      <section id="description" class="description container">
+        <div class="container content">
+          <p>Czym jest śmierć?</p>
+          <p>Końcem?<br />Początkiem?<br />Przejściem?</p>
+          <p>Dla nas wszystkich śmierć jest <br />zdarzeniem dramatycznym.</p>
+          <p>
+            Każda osoba jest wyjątkowa <br />i zasługuje na wyjątkowy pogrzeb.
+            <br />Każde życie i każda śmierć tworzy <br />historię, którą warto
+            opowiedzieć.
+          </p>
+          <p>Wierzę w szczerość<br />i prawdziwe uczucie.</p>
+        </div>
+      </section>
+
+      <!-- MOVIE -->
+
       <section id="movie" class="container">
-       
         <div class="video-wrapper">
           <video controls poster="./assets/images/Krzysztof_movie.webp">
             <source src="./assets/video/IMG_3853.mp4" type="video/mp4" />
@@ -67,20 +80,18 @@
         </div>
       </section>
 
-      <section class="container hero">
+      <!-- HERO -->
 
-        <div class="hero-text">
+      <section class="container about-section">
+        <div class="about-text">
           <h1>
             <span>Godnie</span><br />
             <span>pożegnać</span><br />
             <span>bliskich</span>
           </h1>
         </div>
-
-        <div class="hero-image">
+        <div class="about-image">
           <picture>
-            <!-- Mobilny obrazek
-            <source srcset="img/photo-mobile.webp" media="(max-width: 768px)" type="image/webp" /> -->
             <source
               srcset="./assets/images/Krzysztof_trees.webp"
               type="image/webp"
@@ -96,10 +107,11 @@
             />
           </picture>
         </div>
-       
       </section>
-      <!-- footer -->
     </main>
+
+    <!-- FOOTER -->
+
     <footer>
       <section id="contact" class="container contact">
         <h2>Kontakt</h2>
@@ -112,7 +124,9 @@
 
         <div class="contact-item">
           <svg class="icon"><use href="./assets/icons/mail.svg" /></svg>
-          <a href="mailto:k.pikulski@interia.pl" class="contact-a">k.pikulski@interia.pl</a>
+          <a href="mailto:k.pikulski@interia.pl" class="contact-a"
+            >k.pikulski@interia.pl</a
+          >
         </div>
       </section>
     </footer>
